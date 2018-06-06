@@ -1,0 +1,5 @@
+wp-content/upgrade/
+wp-content/uploads/
+wp-config.php
+wp-includes/js/tinymce/wp-tinymce.js
+error_log
