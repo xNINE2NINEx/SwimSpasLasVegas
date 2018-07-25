@@ -1852,16 +1852,18 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 .twentyseventeen-front-page article:not(.has-post-thumbnail):not(:first-child) {
 	border-top: 1px solid #ddd;
 }
-
 .panel-content {
+	background-color:#111111;
+}
+/*.panel-content {
 	background-image:url('/wp-content/themes/LVHotTubShow/images/funtimes.jpg');
 	background-position:bottom center;
 	background-repeat:no-repeat;
 	background-size:cover;
-	/*background-color:#000230;
-	background-attachment:fixed;*/
+	background-color:#000230;
+	background-attachment:fixed;
 	position: relative;
-}
+}*/
 
 .panel-content .wrap {
 	padding-bottom: 0.5em;
@@ -1947,8 +1949,8 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 .page .panel-content .entry-title,
 .page-title,
 body.page:not(.twentyseventeen-front-page) .entry-title {
-	color:#FFD027 !important;
-	font-size: 4rem;
+	color:#0089e2 !important;
+	font-size: 4.5rem;
 	font-family: 'Oswald', sans-serif;
 	font-weight: 300;
 	letter-spacing: 0em;
@@ -3234,8 +3236,7 @@ object {
 .page .panel-content .entry-title,
 .page-title,
 body.page:not(.twentyseventeen-front-page) .entry-title {
-	color:#FFD027 !important;
-	font-size: 2rem;
+	font-size: 3rem;
 	font-family: 'Oswald', sans-serif;
 	font-weight: 300;
 	letter-spacing: 0em;
@@ -3285,20 +3286,25 @@ body.has-header-image .site-title a {font-size: 3rem !important;}
 		font-size: 1.625rem;
 	}
 
+	footer h3 {
+		font-size: 1.75rem;
+		font-weight: 400;
+	}
+	
 	h3 {
 		font-size: 22px;
-		font-size: 1.75rem;
+		font-size: 2.25rem;
 		font-weight: 400;
 	}
 
 	h4 {
 		font-size: 18px;
-		font-size: 1.125rem;
+		font-size: 2rem;
 	}
 
 	h5 {
 		font-size: 13px;
-		font-size: 0.8125rem;
+		font-size: 1rem;
 	}
 
 	h6 {
@@ -3400,8 +3406,8 @@ body.has-header-image .site-title a {font-size: 3rem !important;}
 	select,
 	textarea {
 		font-size: 16px;
-		font-size: 1rem;
-		line-height: 1.5;
+		font-size: 1.25rem;
+		line-height: 1.75;
 	}
 
 	.entry-content blockquote.alignleft,
@@ -3718,7 +3724,7 @@ body.has-header-image .site-title a {font-size: 3rem !important;}
 	.site-header .site-navigation-fixed .menu-scroll-down {
 		display: none;
 	}
-	.opacity77 {opacity: 0.8;filter: alpha(opacity=80); /* For IE8 and earlier */ }
+	.opacity77 {opacity: 0.9;filter: alpha(opacity=90); /* For IE8 and earlier */ }
 	.nobg{background-color:transparent !important;position: absolute;right:0;}
 	.up{margin:-70px 40px 0 0;padding:0 !important;bottom:95px;}
 	.down{margin:0px 40px 0 0;padding:0 !important;bottom:25px;}
@@ -3801,7 +3807,7 @@ body.has-header-image .site-title a {font-size: 3rem !important;}
 
 	/* With panel images 100% of the screen height, we're going to fix the background image where supported to create a parallax-like effect. */
 	.background-fixed .panel-image {
-		background-attachment: fixed;
+		background-attachment: inherit !important;
 	}
 
 	.page-two-column .panel-content .entry-header {
@@ -4074,6 +4080,7 @@ body.has-header-image .site-title a {font-size: 3rem !important;}
 		font-size: 0.875rem;
 		line-height: 1.6;
 		margin-top: 3em;
+		margin-bottom: -2px;
 	}
 
 	.site-footer .widget-column.footer-widget-1 {
@@ -4373,11 +4380,13 @@ body.has-header-image .site-title a {font-size: 3rem !important;}
 	}
 }
 /*** Front Page Panel Additions ***/
+.dontmissthis, .thisweekend{display:none !important;}
+
 footer h4{padding-top:0;margin-bottom:3px;font-weight:300;}
 .entry-content .top{padding-top:0;}
 .entry-content h4{padding-top:0;margin-bottom:3px;font-weight:300;}
-.loudmessage {width:100%;text-align:center;margin:0 auto;background:rgba(255,0,222, 0.5);padding:0 0 7px 0;}
-.loudmessage h1{font-size:60px;font-family:'Oswald', sans-serif;font-weight:300;text-transform:uppercase;margin:0; letter-spacing:-1.25px;}
+.loudmessage {width:100%;text-align:center;margin:0 auto;background:rgba(225,62,0, 1);padding:15px 0 22px 0;}
+.loudmessage h1{font-size:64px;font-family:'Oswald', sans-serif;font-weight:300;text-transform:uppercase;margin:0; letter-spacing:-1.25px;}
 
 @media screen and (max-width: 767px) {
 	.loudmessage h1{font-size:30px;}
