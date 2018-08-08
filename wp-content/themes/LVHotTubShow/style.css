@@ -3807,7 +3807,7 @@ body.has-header-image .site-title a {font-size: 3rem !important;}
 
 	/* With panel images 100% of the screen height, we're going to fix the background image where supported to create a parallax-like effect. */
 	.background-fixed .panel-image {
-		background-attachment: inherit !important;
+		background-attachment: fixed;
 	}
 
 	.page-two-column .panel-content .entry-header {
